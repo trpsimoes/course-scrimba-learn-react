@@ -1,0 +1,75 @@
+:root {
+  --color1: #61DAFB;
+  --color2: #21222A;
+  --color3: #282D35;
+  --text-color: white;
+  --gap: 15px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: var(--color3);
+  color: var(--text-color);
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background-image: url(./assets/react.svg);
+  background-repeat: no-repeat;
+  background-position: right calc(-30dvw / 2) center;
+  background-size: 30dvw;
+}
+
+
+.header {
+  background-color: var(--color2);
+  height: 90px;
+  padding: 30px 30px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  height:  100%;
+}
+
+.header nav .nav-logo {
+  width: 55px;
+}
+
+.header nav span {
+  font-size: 1.4rem;
+  color: var(--color1);
+  font-weight: 700;
+}
+
+
+.main {
+  padding: 60px 30px;
+}
+
+.main h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+
+
+.main ul > li {
+  padding-block: 10px;
+  line-height: 19px;
+}
+
+.main ul > li::marker {
+  color:var(--color1);
+  font-size: 2rem;
+}
