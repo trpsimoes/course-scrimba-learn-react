@@ -1,0 +1,82 @@
+:root {
+  --color1: #f55a5a;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background-color: var(--color1);
+}
+
+.header nav {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  gap: 15px;
+}
+
+.header nav .nav-logo {
+  max-height: 30px;
+}
+
+.header nav h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+padding: 60px 0;
+}
+
+article {
+  align-items: start;
+  display: flex;
+  gap: 20px;
+  max-width: 600px;;
+}
+
+article :is(.entry-header, .entry-dates) {
+  font-size: .8rem;
+}
+
+article .entry-image {
+  border-radius: 5px;
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+}
+
+article .entry-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-size: .7rem;
+}
+
+article .entry-header .entry-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+article .entry-dates {
+  font-weight: 600;
+}
+
+article .entry-description {
+  font-size: .8rem;
+}

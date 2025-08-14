@@ -1,0 +1,59 @@
+:root {
+  --color1: #f55a5a;
+}
+
+
+html, body {
+  margin: 0;
+  
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background-color: var(--color1);
+}
+
+.header nav {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  gap: 15px;
+}
+
+.header nav .nav-logo {
+  max-height: 30px;
+}
+
+.header nav h1 {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+article .entry-image {
+  grid-row: 1 / -1;
+}
+
+article .entry-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+article > *:not(.entry-image) {
+  grid-column: 2;
+}
